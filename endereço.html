@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>endereço de entrega</title>
+        <style> body{
+            text-align: center;
+        }
+    
+        </style>
+    </head>
+    <body style="background-color: antiquewhite;">
+        
+        <h2>Endereço de entrega</h2>
+         <form action="http://localhost:/alunos" method="get">
+         <div>
+            <label for="NOME">NOME:</label required><br>
+            <input type="texto"> <br/>
+            <br><label for="SOBRENOME">SOBRENOME:</label required> <br/>
+            <input type="text"> <br/>
+            <br> <label for="CPF">CPF:</label requered><br/>
+            <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <br/>
+            <br> <label for="ENDEREÇO">ENDEREÇO DE ENTREGA:</label required> <br/>
+            <input type="text"> <br/>
+            <br> <label for="CEP">CEP:</label> <br>
+            <input type="text"> <br>
+            <br><label for="CIDADE">CIDADE:</label> <br>
+            <input type="text"><br>
+            <br><label for="BAIRRO">BAIRRO</label><br>
+            <input type="text"> <br>
+            
+            <br><label for="Estado">Selecione seu estado:</label><br>
+            <br><select id="Estado"required>
+                <optionvalue="AC">Acre</opção>
+                <optionvalue="AL">Alagoas</opção>
+                <option value="AP">Amapá</option >
+                <option value="AM">Amazonas</option>
+                <optionvalue="BA">Bahia</opção>
+                <optionvalue="CE">Ceará</opção>
+                <option value="DF">Distrito Federal</option >
+                <optionvalue="ES">Espírito Santo</opção>
+                <option value="GO">Goiás</option >
+                <option value="MA">Maranhão</option >
+                <optionvalue="MT">Mato Grosso</opção>
+                <optionvalue="MS">Mato Grosso do Sul</opção>
+                <optionvalue="MG">Minas Gerais</opção>
+                <optionvalue="PA">Pará</opção>
+                <opção valor="PB">Paraíba</opção >
+                <optionvalue="PR">Paraná</opção>
+                <optionvalue="PE">Pernambuco</opção>
+                <option value="PI">Piauí</option >
+                <option value="RJ">Rio de Janeiro</option >
+                <optionvalue="RN">Rio Grande do Norte</opção>
+                <optionvalue="RS">Rio Grande do Sul</opção>
+                <option value="RO">Rondônia</option >
+                <optionvalue="RR">Roraima</opção>
+                <optionvalue="SC">Santa Catarina</opção>
+                <option value="SP">São Paulo</option >
+                <opção valor="SE">Sergipe</opção >
+                <option value="TO">Tocantins</option >
+                <option value="EX">Estrangeiro</option> 
+            
+            
+                <br></select> <br>
+            </div>
+            <div>
+                <br><p>O endereço de entrega é o mesmo de cobrança ?</p> 
+                <br><input type="checkbox" name="sim" id="sim" value="SIM">
+                <label for="sim1">SIM</label> <br>
+            </div>
+            <div>
+
+                <input type="checkbox" name="nao" id="nao" value="NAO">
+                <label for="nao">NAO</label> <br>
+
+             </div>
+            <br><input type="submit" value="Incluir endereço">
+        
+         </form>
+    
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>formulário doces</title>
+    
+    </head>
+    <style>
+        h2{
+            text-align: center;
+        }
+        body {
+            text-align: center ;
+        }
+    </style>
+    <body style="background-color: #cd7c8d ;">
+        <form action="http://localhost:/doces" method="get">
+        <h2>Pesquisa Tech4Doces</h2>
+        <div>
+            <label for="NOME">NOME:</label required><br>
+            <input type="texto"> <br/>
+            <label for="SOBRENOME">SOBRENOME:</label required> <br/>
+            <input type="text"> <br/>
+            <label for="CPF">CPF:</label requered><br/>
+            <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <br/>
+            <label for="ENDEREÇO">ENDEREÇO:</label required> <br/>
+            <input type="text"> <br/>
+
+        </div>
+        <p> Comente conosco qual doce mais marcou a sua infância </p>
+        <div>
+            <textarea name="escreva aqui" id="escreva aqui" cols="50" rows="10"></textarea> <br/>
+            <input type="submit" value="Enviar minhas lembranças">
+
+        </div>
+        </form>
+    
+
+</body>
+</html>
